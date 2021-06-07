@@ -15,6 +15,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --main-color: #757575;
+  --icons-color: #afb1b8;
 }
 h1,
 h2,
@@ -133,7 +134,11 @@ body {
 }
 
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.footer-link:hover,
+.footer-link:focus {
   color: var(--accent-color);
 }
 
@@ -146,7 +151,7 @@ body {
   margin-right: 50px;
 }
 
-.mail-link {
+.contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -154,24 +159,17 @@ body {
   color: var(--main-color);
 }
 
-.mail-link:hover,
-.mail-link:focus {
-  color: var(--accent-color);
+.contact-link:hover .icon-contacts,
+.contact-link:focus .icon-contacts {
+  fill: currentColor;
 }
 
-.tel-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--main-color);
+.icon-contacts {
+  display: inline-block;
+  margin-right: 10px;
+  fill: var(--icons-color);
 }
 
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
-}
 /*========================END==HEADER=======================*/
 
 /*===========================HERO===================*/
@@ -256,6 +254,16 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+.advent-thumb {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f4fa;
 }
 /*====================END Advantages=========================*/
 
@@ -375,23 +383,12 @@ body {
   color: var(--accent-color);
 }
 
-.footer-tel-link,
-.footer-mail-link {
+.footer-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-tel-link:hover,
-.footer-tel-link:focus {
-  color: var(--accent-color);
-}
-
-.footer-mail-link:hover,
-.footer-mail-link:focus {
-  color: var(--accent-color);
 }
 
 /*================END==FOOTER=================*/
