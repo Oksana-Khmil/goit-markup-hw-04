@@ -130,7 +130,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: var(--title-text-color);
 }
 
 .menu-link:hover,
@@ -152,11 +152,13 @@ body {
 }
 
 .contact-link {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  align-items: center;
 }
 
 .contact-link:hover .icon-contacts,
@@ -234,7 +236,6 @@ body {
 /*=====Advantages (advant- никогда не писать adv-title!!!)=====*/
 .advant-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .advant-item:not(:last-child) {
@@ -256,8 +257,7 @@ body {
   line-height: 1.71;
 }
 .advent-thumb {
-  width: 270px;
-  height: 120px;
+  padding: 30px 0;
   margin-bottom: 30px;
   border-radius: 4px;
   align-items: center;
@@ -350,7 +350,7 @@ body {
 .social-icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-list-icons {
@@ -360,11 +360,10 @@ body {
 }
 
 .social-link {
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
   border-radius: 50%;
 }
 
@@ -391,17 +390,16 @@ body {
 }
 
 .client-link {
+  padding: 16px 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
 .client-link:hover,
-.contact-link:focus {
+.client-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   outline: none;
@@ -423,9 +421,14 @@ body {
   display: flex;
   align-items: baseline;
 }
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-container {
   align-items: baseline;
-  padding-left: 215px;
 }
 
 .social-footer {
@@ -447,6 +450,9 @@ body {
 
 .footer-soc-item:first-child {
   margin-left: 0;
+}
+.footer-soc-item:not(:last-child) {
+  margin-right: 10px;
 }
 .footer-address {
   margin-top: 20px;
